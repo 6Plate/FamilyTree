@@ -17,7 +17,7 @@ public class Service {
         tree = new FamilyTree<>();
         builder = new HumanBuilder();
     }
-    public void addItem(String name, Gender gender, LocalDate bd, LocalDate dd, Human mother, Human father ) {
+    public void addItem(String name, Gender gender, LocalDate bd, LocalDate dd, Human mother, Human father, List<Human> child) {
         Human human = builder.build (name, gender, bd, dd, mother, father);
         tree.addHuman(human);
     }

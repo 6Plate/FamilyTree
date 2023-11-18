@@ -2,7 +2,6 @@ package ProjectFT.Tree.FamilyTree;
 
 import java.util.Comparator;
 
-import ProjectFT.Human.Human;
 
 public class ComporatorAge <T extends FamTreeItem> implements Comparator <T>{
 

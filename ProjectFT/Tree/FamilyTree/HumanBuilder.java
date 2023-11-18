@@ -1,6 +1,8 @@
 package ProjectFT.Tree.FamilyTree;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 import ProjectFT.Human.Gender;
 import ProjectFT.Human.Human;
