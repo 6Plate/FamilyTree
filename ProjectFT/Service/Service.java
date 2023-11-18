@@ -40,7 +40,7 @@ public void sortByAge(){ tree.sortByAge(); }
 
 public void sortByName(){tree.sortByName();} 
 
-public void addToParents(Human h){
+public void addToParents(Human e){
 for (Human parent:e.getParents())
 parent.AddChild(e);
 }
@@ -50,7 +50,7 @@ child.AddParents(e);
 }
 
 public Human getById(long id){
-for (Human e: membersTree){
+for (Human e: tree){
 if (e.getId() == id){
     return e;
 }
@@ -59,7 +59,7 @@ return null;
 }
 public List<Human> getByName(String name){
 List<Human> names = new ArrayList<>();
-for(Human n:membersTree){
+for(Human n:tree){
 if(n.getName().equals(name)){
 names.add(n);
 }
