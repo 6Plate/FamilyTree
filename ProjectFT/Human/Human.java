@@ -6,11 +6,9 @@ import java.time.Period;
 import java.util.ArrayList;
 import java.util.List;
 
-import Tree.FamilyTree.FamTreeItem;
+import ProjectFT.Tree.FamilyTree.FamTreeItem;
 
 public class Human implements Serializable, Comparable<Human>, FamTreeItem <Human> {
-    private static final Gender Male = null;
-    private static final Gender Female = null;
     private long id;
    private String name;
    private Gender gender;
@@ -53,10 +51,10 @@ public void setId(Long id){
         return this.child;
     }
     public void AddParents(Human parent ){
-        if(parent.getGender() == (Female)){
+        if(parent.getGender().equals(Gender.Female)){
             parent.setMother(parent);
         }
-        else if(parent.getGender() == (Male)){
+        else if(parent.getGender().equals(Gender.Male)){
             parent.setFather(parent);
         }
     }

@@ -1,4 +1,4 @@
-package Tree.FamilyTree;
+package ProjectFT.Tree.FamilyTree;
 
 import java.time.LocalDate;
 
@@ -10,4 +10,8 @@ public class HumanBuilder {
         Human human = new Human ( name, gender, bd, dd, mother, father);
         return human;
     }
+    public Human build (String name, Gender gender, LocalDate bd){
+    Human human = new Human(name, gender, bd);
+    return human;
+}
 }

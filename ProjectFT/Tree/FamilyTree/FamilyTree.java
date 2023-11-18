@@ -1,4 +1,4 @@
-package Tree.FamilyTree;
+package ProjectFT.Tree.FamilyTree;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -28,6 +28,7 @@ public long getMembersId() {
         addToChild(e);
     }
 }
+
 
 public void addToParents(E e){
 for (E parent:e.getParents())
